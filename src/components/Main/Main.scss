@@ -1,0 +1,108 @@
+@import '../../assets/styles/mixins.scss';
+
+.main {
+    @include df (row, space-between, center);
+    margin-top: 100px;
+
+    @media screen and (max-width: 600px) {
+        margin-top: 60px;
+        flex-direction: column;
+        }
+
+    &-text {
+        @include df (column, space-between, center);
+        gap: 50px;
+    }
+
+    &-header {
+        width: 640px;
+        height: 100%;
+        @include text (30px, 400, 45px);
+        text-align: center;
+        
+        p {
+            margin: 1em 0;
+
+            &:last-child {
+                @media screen and (max-width: 600px) {
+                display: none;
+                }
+            }
+        }
+
+        @media screen and (max-width: 1350px) {
+            width: 100%;;
+            font-size: 22px;
+            line-height: 30px;
+        }
+
+        @media screen and (max-width: 950px) {
+            font-size: 16px;
+            width: 70%;
+            line-height: 19px;
+        }
+
+        @media screen and (max-width: 600px) {
+           width: 100%;
+            }
+
+        span {
+            font-size: 50px;
+            line-height: 62px;
+
+            @media screen and (max-width: 1350px) {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            @media screen and (max-width: 950px) {
+                font-size: 22px;
+                line-height: 26px;
+            }
+
+            @media screen and (max-width: 600px) {
+                font-size: 28px;
+                line-height: 35px;
+                }
+        }
+    }
+
+    &-book {
+        background-color: #4744C9;
+        color: #FFFFFF;
+        padding: 0.5em 1em;
+        border-radius: 30px;
+        @include text (16px, 600, 1.5);
+
+        @media screen and (max-width: 1350px) {
+            align-self: center;
+        }
+        @media screen and (max-width: 950px) {
+            width: 70%;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            display: none;
+            }
+    }
+
+    &-image {
+        width: 50%;
+
+        @media screen and (max-width: 600px) {
+            width: 300px;
+            height: 220px;
+             }
+    }
+
+    &-menu {
+        display: none;
+
+        @media screen and (max-width: 600px) {
+            display: flex;
+            margin-top: 30px;
+            @include text (20px, 400, 40px);
+            text-align: center;
+        }
+    }
+}

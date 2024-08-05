@@ -1,0 +1,73 @@
+@import '../../assets/styles/mixins.scss';
+
+.reviews {
+    @include df (column, space-between, center);
+    height: max-content;
+
+    .h2-header {
+        @include text (36px, 800, 54px);
+
+        @media screen and (max-width: 950px) {
+            font-size: 32px;
+            line-height: 48px;
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    &-btn {
+        background: transparent;
+        border: none;
+    }
+
+    &-review {
+        @include df (row, space-between, center);
+    }
+
+    &-images {
+        width: 100%;
+        @include df (row, space-evenly, start);
+        margin: 1em 0;
+
+        img:nth-child(odd) {
+            @media screen and (max-width: 600px) {
+            display: none;
+        }
+        } 
+    }
+
+    &-text {
+        width: 70%;
+        height: 300px;
+        @include df (column, center, center);
+
+        @media screen and (max-width: 600px) {
+           height: 500px;
+        }
+
+        p {
+            @include text (18px, 400, 27px);
+
+            @media screen and (max-width: 950px) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+        }
+    }
+
+    .prev-img, .next-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }  
+    
+    .cur-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+}

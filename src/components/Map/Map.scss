@@ -1,0 +1,41 @@
+@import '../../assets/styles/mixins.scss';
+
+.map {
+    position: relative;
+    transition: none;
+    height: 600px;
+
+    .yandex {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        transition: none;
+        height: 100%
+    }
+
+    &-text {
+        z-index: 2;
+        position: relative;
+        text-align: center;
+        padding: 2em 0;
+        
+        .map-sticker {
+            background-color: white;
+            width: 400px;
+            padding: 1em 2em;
+        }
+
+        h3 {
+            @include text (24px, 600, 1.5);
+            text-align: left;
+        }
+
+        p {
+            @include text (22px, 400, 2);
+            text-align: left;
+        }
+    }
+}

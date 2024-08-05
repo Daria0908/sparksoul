@@ -1,0 +1,75 @@
+@import '../../assets/styles/mixins.scss';
+
+.aboutUs{
+    &-us {
+        @include dg (3, 30px);
+
+        @media screen and (max-width: 950px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-item {
+            position: relative;
+            display: inline-block;
+        }
+    }
+
+    &-img {
+        width: 100%;
+        border-radius: 30px;
+        height: auto;
+        display: block;
+        transition: filter 0.3s;
+
+        @media screen and (max-width: 950px) {
+            width: 420px;
+        }
+        @media screen and (max-width: 600px) {
+            width: 270px;
+        }
+    }
+
+    &-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 1em 2em;
+        border-radius: 30px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        text-align: center;
+        @include text (18px, 400, 1.7);
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 950px) {
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+        @media screen and (max-width: 600px) {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+
+    &-name {
+        text-align: center;
+        @include text (26px, 600, 1);
+        margin-top: 0.5em;
+    }
+}
+
+.aboutUs-us-item:hover {
+    .aboutUs-text {
+        opacity: 1;
+      }
+    
+      .aboutUs-img {
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+}

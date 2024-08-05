@@ -1,0 +1,70 @@
+@import '../../assets/styles/mixins.scss';
+
+.aboutSparkSoul {
+    background-color: #9D9BF1;
+    padding: 2em;
+    border-radius: 30px;
+    margin: 100px 0;
+    text-align: left;
+    box-shadow: 0px 0px 100.8px 6px rgba(0, 0, 0, 0.25);
+
+    @media screen and (max-width: 600px) {
+        padding: 3px 5px;
+    }
+    &-header {
+        @include text (24px, 500, 36px);
+        margin: 1.5em;
+        margin-bottom: 0;
+
+        @media screen and (max-width: 600px) {
+            margin: 36px 15px;
+            padding: 0;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    &-list {
+        margin-bottom: 1em;
+        @media screen and (max-width: 600px) {
+            margin: 36px 15px;
+            padding: 0;
+            margin-bottom: 0;
+        }
+        
+        &-header {
+            @include text (24px, 500, 36px);
+
+            @media screen and (max-width: 900px) {
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            @media screen and (max-width: 600px) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        
+        &-text {
+            @include text (18px, 400, 27px);
+            list-style: none;
+
+            @media screen and (max-width: 900px) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            @media screen and (max-width: 600px) {
+                font-size: 14px;
+                line-height: 21px;
+            }
+
+            &:before {
+                content:  "-";
+                position: relative;
+                left:     -5px;
+            }
+        }
+    }
+}
