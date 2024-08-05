@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/sparksoul/static/css/main.de25c7b9.css",
+    "main.js": "/sparksoul/static/js/main.bf597fa8.js",
+    "static/media/rew3.png": "/sparksoul/static/media/rew3.c5a2b559e94209b4f8dc.png",
+    "static/media/rew1.png": "/sparksoul/static/media/rew1.7d4435bcc50369669029.png",
+    "static/media/rew2.png": "/sparksoul/static/media/rew2.74ac7a7b45f03cf6538d.png",
+    "static/media/Pepa.jpg": "/sparksoul/static/media/Pepa.6a45be58d20c79f46cd6.jpg",
+    "static/media/Dasha.jpg": "/sparksoul/static/media/Dasha.97d6eeb75f4986133e56.jpg",
+    "static/media/Roma.jpg": "/sparksoul/static/media/Roma.85ab2ebfeee2e340676a.jpg",
+    "static/media/schedule_tablet.png": "/sparksoul/static/media/schedule_tablet.7507c16f2b9c46ad7c36.png",
+    "static/media/schedule.png": "/sparksoul/static/media/schedule.b5cb5deb059ebc8e7342.png",
+    "static/media/schedule_mobile.png": "/sparksoul/static/media/schedule_mobile.11e074039ed7076b5300.png",
+    "static/media/main.png": "/sparksoul/static/media/main.5b7ab7c57a60a2cedab6.png",
+    "static/media/faq.png": "/sparksoul/static/media/faq.2e27ea3768e28f639e7c.png",
+    "index.html": "/sparksoul/index.html",
+    "main.de25c7b9.css.map": "/sparksoul/static/css/main.de25c7b9.css.map",
+    "main.bf597fa8.js.map": "/sparksoul/static/js/main.bf597fa8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de25c7b9.css",
+    "static/js/main.bf597fa8.js"
+  ]
+}
