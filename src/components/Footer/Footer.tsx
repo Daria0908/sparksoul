@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <div className="footer-desctop">
           <div className="footer-top">
             <div className="footer-main">
-              <img src={logotype} alt="logotype" />
+              <img src={logotype} alt="logotype" className="footer-logo" />
               <p>ИП Преснякова В.М.</p>
               <div className="footer-main-socials">
                 <a href="https://t.me/sparksoulcamp">
@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="footer-tablet">
           <div className="footer-main">
-            <img src={logotype} alt="logotype" id="logotype" />
+            <img src={logotype} alt="logotype" id="logotype" className="footer-logo" />
             <div className="footer-contact">
               <p>Телефон: +7-977-713-39-19</p>
               <p>Email: presnyakovaleriya@yandex.ru</p>
@@ -149,7 +149,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="footer-mobile">
-          <img src={logotype} alt="logotype" id="logotype" />
+          <img src={logotype} alt="logotype" id="logotype" className="footer-logo" />
           <ul className="footer-nav">
             <li>
               <a href="#main" className="link">
@@ -211,15 +211,12 @@ const Footer: React.FC = () => {
             </a>
           </div>
           <div className="footer-bottom">
-            <div>
-              <p>Политика конфиденциальности</p>
-              <p>Согласие на обработку персональных данных</p>
-              <p>Все права защищены</p>
-            </div>
-            <div className="footer-bottom-right">
-              <p>Разработка сайта</p>
-              <p>Дизайн сайта</p>
-            </div>
+            <p>Политика конфиденциальности</p>
+            <p>Согласие на обработку персональных данных</p>
+            <p>Все права защищены</p>
+
+            <p>Разработка сайта</p>
+            <p>Дизайн сайта</p>
           </div>
         </div>
       </div>

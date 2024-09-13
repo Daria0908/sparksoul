@@ -16,6 +16,11 @@
         margin: 1.5em;
         margin-bottom: 0;
 
+        @media screen and (max-width: 900px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
         @media screen and (max-width: 600px) {
             margin: 36px 15px;
             padding: 0;

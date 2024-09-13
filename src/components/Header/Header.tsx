@@ -79,7 +79,7 @@ const Header: React.FC = () => {
                   </svg>
                 </div>
 
-                <li>
+                <li className="burger-main-link">
                   <SmoothScrollLink to="#main" classParent="link" id="call">
                     Связаться с нами
                   </SmoothScrollLink>
