@@ -1,37 +1,55 @@
 import { IAccordion } from "./Accordion/Accordion";
 
 export const questions: IAccordion[] = [
-    {
-      title: 'Какое оборудование взять с собой',
-      content: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'],
-    },
-    {
-      title: 'В чем отличие этого ретрита от других',
-      content: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'],
-    },
-    {
-      title: 'Есть ли смысл ехать, если уже есть опыт ретритов',
-      content: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'],
-    },
-    {
-      title: 'Можно ли приехать и уехать раньше/позже',
-      content: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'],
-    },
-    {
-      title: 'Можно пропускать мероприятия запланированные в расписании, если мне это не интересно?',
-      content: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'],
-    },
-    {
-      title: 'Не люблю эзотерику, мне подойдет ретрит?',
-      content: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'],
-    },
-    {
-      title: 'Никогда не была на ретрите, мне подойдет?',
-      content: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'],
-    },
-    {
-      title: 'А вдруг мне не подойдет компания?',
-      content: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'],
-    },
-  ];
-  
+  {
+    title: "Что такое ретрит и подойдёт ли мне, если никогда не пробовал(а)?",
+    content: [
+      "Ретрит – это организованное мероприятие, направленное на отдых, восстановление и внутреннюю работу над собой через различные практики и активности. Подходит всем, кто хочет отдохнуть от повседневной суеты и посвятить время себе. Опыт не обязателен — мероприятия, подойдут как новичкам, так и уже тем, кто пробовал те или иные практики.",
+    ],
+  },
+  {
+    title: "В чем отличие этого ретрита от других",
+    content: [
+      "Наш ретрит свободен от эзотерики. В программе нет классической йоги и медитаций, но присутствует умный фитнес и дыхательные практики. Также у нас большой выбор творческих и трансформационных практик, а также мероприятия, напоминающие атмосферу летнего лагеря в детстве.",
+    ],
+  },
+  {
+    title: "Какие вещи нужно взять с собой?",
+    content: [
+      " Рекомендуется взять:",
+      "- спортивную одежду для практик йоги и медитации (лучше обтягивающие, чтобы максимально было видно линии тела)",
+      "- личные гигиенические средства",
+      "- удобную обувь для прогулок на природе",
+      "- купальник (если в программе есть бассейн или сауна).",
+      "Если для ретрита требуются особые вещи, мы заранее оповещаем участников.",
+    ],
+  },
+  {
+    title: "Что делать, если я никогда не занимался (ась) спортом или творчеством? ",
+    content: [
+      "Наши программы подходят для людей с любым уровнем подготовки, в том числе для новичков. Инструкторы адаптируют занятия под уровень участников и предоставляют поддержку каждому.",
+    ],
+  },
+  {
+    title: "Можно ли приехать на ретрит позже или уехать раньше? ",
+    content: [
+      "Да, вы можете приехать и уехать в удобное для вас время, но мы рекомендуем максимально освободить ваш график на время проведения ретрита, чтобы получить максимум от выезда.",
+    ],
+  },
+  {
+    title: "Можно пропускать мероприятия запланированные в расписании, если мне это не интересно?",
+    content: [
+      "Да, мы не принуждаем никого к участию против своей воли. Но рекомендуем вам быть открытыми к новому опыту и не переживать, если что-то не получается.",
+    ],
+  },
+  {
+    title: "Предусмотрены ли индивидуальные консультации или занятия?",
+    content: ["Вы можете индивидуально позаниматься с любым из наших инструкторов за дополнительную плату при наличии свободного времени."],
+  },
+  {
+    title: "Можно ли приехать на ретрит одному/одной?",
+    content: [
+      "Да, многие участники приезжают на ретрит в одиночку, чтобы посвятить это время себе и своим внутренним поискам. Во время ретрита создаётся дружелюбная и поддерживающая атмосфера, где легко найти единомышленников и обрести новых друзей.",
+    ],
+  },
+];

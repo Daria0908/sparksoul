@@ -14,7 +14,7 @@ const Main: React.FC = () => {
 
             <p>Отвлекись от рутины и восстанови свое тело и разум вместе с нами.</p>
           </h1>
-          <a href="#" className="main-book">
+          <a href="https://wa.me/79936095049" target="_blank" rel="noopener noreferrer" className="main-book">
             забронировать место
           </a>
         </div>
@@ -47,9 +47,9 @@ const Main: React.FC = () => {
               </a>
             </li>
             <li>
-              <SmoothScrollLink to="#main" classParent="link" id="call">
+              <a href="https://wa.me/79936095049" target="_blank" rel="noopener noreferrer">
                 Связаться с нами
-              </SmoothScrollLink>
+              </a>
             </li>
           </ul>
         </div>

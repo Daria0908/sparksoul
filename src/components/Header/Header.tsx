@@ -58,9 +58,9 @@ const Header: React.FC = () => {
                   </SmoothScrollLink>
                 </li>
                 <li>
-                  <SmoothScrollLink to="#main" classParent="link" id="call">
+                  <a href="https://wa.me/79936095049" target="_blank" rel="noopener noreferrer" id="call">
                     Связаться с нами
-                  </SmoothScrollLink>
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -80,9 +80,9 @@ const Header: React.FC = () => {
                 </div>
 
                 <li className="burger-main-link">
-                  <SmoothScrollLink to="#main" classParent="link" id="call">
+                  <a href="https://wa.me/79936095049" target="_blank" rel="noopener noreferrer">
                     Связаться с нами
-                  </SmoothScrollLink>
+                  </a>
                 </li>
               </div>
             </div>

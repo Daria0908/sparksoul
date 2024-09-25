@@ -1,11 +1,11 @@
 @import '../../assets/styles/mixins.scss';
 
 .reviews {
-    @include df (column, space-between, center);
+    @include df(column, space-between, center);
     height: max-content;
 
     .h2-header {
-        @include text (36px, 800, 54px);
+        @include text(36px, 800, 54px);
 
         @media screen and (max-width: 950px) {
             font-size: 32px;
@@ -19,57 +19,35 @@
         }
     }
 
-    &-btn {
-        background: transparent;
-        border: none;
-    }
-
-    &-review {
-        @include df (row, space-between, center);
-    }
-
     &-images {
         width: 100%;
-        @include df (row, space-evenly, start);
+        @include df(row, space-evenly, center);
         margin: 1em 0;
 
-        img:nth-child(odd) {
-            @media screen and (max-width: 600px) {
-            display: none;
-        }
-        } 
-    }
+        img {
+            cursor: pointer;
+            transition: transform 0.3s ease;
 
-    &-text {
-        width: 70%;
-        height: 300px;
-        text-align: center;
-        @include df (column, center, center);
-
-        @media screen and (max-width: 600px) {
-           height: 500px;
-        }
-
-        p {
-            @include text (18px, 400, 27px);
-
-            @media screen and (max-width: 950px) {
-                font-size: 16px;
-                line-height: 24px;
+            &:hover {
+                transform: scale(1.05);
             }
-
         }
-    }
 
-    .prev-img, .next-img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-    }  
-    
-    .cur-img {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
+        .prev-img, .next-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 15px;
+            object-fit: cover;
+            @media screen and (max-width: 600px) {
+                display: none;
+            }
+        }
+
+        .cur-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 15px;
+            object-fit: contain;
+        }
     }
 }
